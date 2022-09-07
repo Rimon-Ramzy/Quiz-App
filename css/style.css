@@ -1,0 +1,94 @@
+#quiz,
+#finish,
+#Correct,
+#inCorrect {
+  display: none;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  height: 100vh;
+  background-image: url('./../images/Wave-100s-1366px\ \(2\).svg');
+  background-size: cover;
+  background-position: right;
+  background-repeat: no-repeat;
+}
+
+.text-spec {
+  color: #653383
+}
+
+.bg-spec {
+  background-color: #653383
+}
+
+button {
+  cursor: pointer;
+}
+
+.alert {
+  display: none;
+}
+
+@media (max-width: 575px) {
+  .settings-container,
+  .quiz-container,
+  .finish-container {
+    width: 95% !important;
+  }
+  h1 {
+    font-size: 25px;
+  }
+  option {
+    font-size: 15px;
+  }
+  h5 {
+    font-size: 15px;
+  }
+  .bg-spec {
+    font-size: 13px;
+  }
+  .header-quiz,
+  .finish-container h1 {
+    padding-block-start: 30px !important;
+    padding-block-end: 20px !important;
+  }
+  .finish-container h5 {
+    font-size: 40px;
+    padding-block-start: 0 !important;
+    padding-block-end: 20px !important;
+  }
+  .finish-container #score {
+    font-size: 40px;
+  }
+  .finish-container .btn {
+    margin-block-end: 0 !important;
+  }
+}
+@media (min-width: 576px) { /* small devices => landscape phone */
+  .settings-container,
+  .quiz-container,
+  .finish-container {
+    width: 80% !important;
+  }
+  .finish-container h5 {
+    font-size: 40px;
+  }
+  .finish-container #score {
+    font-size: 40px;
+  }
+}
+@media (min-width: 992px) { /* Desktop devices => PC */
+  .settings-container,
+  .quiz-container,
+  .finish-container {
+    width: 60% !important;
+  }
+}
+@media (min-width: 1200px) { /* Large Screen devices => PC */
+  .settings-container,
+  .quiz-container,
+  .finish-container {
+    width: 50% !important;
+  }
+}
